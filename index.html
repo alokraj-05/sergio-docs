@@ -6,72 +6,179 @@
   <link rel="icon" href="logo1.jpeg" type="image/x-icon" />
   <title>Sergio Docs</title>
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
   <div class="sidebar">
-    <h2>Navigation</h2>
-    <ul>
-      <li><a href="#setup">Setup</a></li>
-      <li><a href="#commands">Commands</a></li>
-      <li><a href="#prefix">Prefix</a></li>
-      <li><a href="#features">Features</a></li>
-    </ul>
+    <div class="above-navigation">
+      <div class="bot-img">
+        <img src="./logo1.jpeg" alt="logo">
+      </div>
+      <div class="bot-inv">
+        <h4>Sergio</h4>
+        <a href="https://discord.com/oauth2/authorize?client_id=1268482584103354398">Invite me</a>
+      </div>
+    </div>
+    <div class="below-navigation">
+      <ul>
+        <a href="mailto:sergiobot@gmail.com" class="blue"><i class="fa-solid fa-at"></i> Contact Us</a>
+        <a href="https://gtihub.com/alokraj-05/Discord-Moderation-Bot" class="purple"><i class="fa-solid fa-code"></i> Source Code</a>
+        <a href="https://buymeacoffee.com/alokraj" class="yellow"><i class="fa-solid fa-mug-hot"></i> Buy me a coffee</a>
+        <a href="https://discord.gg/99ugxRgyk5" class="blue"><i class="fa-brands fa-discord"></i> Support</a>
+      </ul>
+      <div class="below-navigation-footer">
+      <div class="social-promo">
+        <a href="https://github.com/alokraj-05" class="purple-txt"><i class="fa-brands fa-github"></i></a>
+        <a href="https://discord.com/users/1161611783891587122" class="purple-txt"><i class="fa-solid fa-ghost"></i></a>
+      </div>
+      <div class="details">
+        <a href="https://discord.js.org">DJS v14.16.2</a>
+      </div>
+    <div class="policy">
+      <a href="tos.html"  ></i> Terms of Service </a> |
+      <a href="privacy.html" ></i> Privacy</a>
+    </div>
+  </div>
+  </div>
   </div>
   
   <div class="content">
-    <h1>Sergio Discord Bot Documentation</h1>
+    <h1 style="text-align: center;">Sergio Docs</h1>
+    <hr>
+    <p style="margin-top: 3rem;">Welcome to Sergio Bot! While there are numerous moderation bots available for Discord, Sergio offers a unique approach to server management. What sets Sergio apart isn't an abundance of extra features, but rather its focus on providing more detailed and customizable commands. This allows for greater specificity in moderation tasks, tailoring the bot's responses to your server's particular needs. You can use Sergio alongside other bots, or as your primary moderation tool. Moreover, as an open-source project, you have the freedom to modify Sergio, adding or adjusting commands to perfectly suit your community's requirements. Choose Sergio for a moderation experience that prioritizes precision and customization.</p>
     
-    <section id="setup">
-      <h2>Setup</h2>
-      <p>Follow these steps to set up the Sergio Discord Bot:</p>
+    <section id="setup" class="setup">
+      <h2 class="setup-h2">Setup</h2>
+      <p class="setup-p">Follow these steps to set up the Sergio Discord Bot:</p>
+
       <ol>
-        <li>Invite the bot to your server using this <a href="#">invite link</a>.</li>
+        <li>Invite the bot to your server using this <a href="https://discord.com/oauth2/authorize?client_id=1268482584103354398">invite link</a>.</li>
         <li>Ensure the bot has the necessary permissions.</li>
-        <li>Use the <code>!setup</code> command to initialize the bot in your server.</li>
       </ol>
     </section>
     
-    <section id="commands">
+    <section id="commands" class="commands">
       <h2>Commands</h2>
-      <p>Here are some of the main commands for Sergio Bot:</p>
-      <ul>
-        <li><code>!help</code> - Display a list of available commands</li>
-        <li><code>!ping</code> - Check the bot's response time</li>
-        <li><code>!info</code> - Get information about the bot</li>
-        <li><code>!settings</code> - Adjust bot settings for your server</li>
+      <p class="cmd-p">Sergio Bot supports two types of commands:</p>
+      <ol class="cmd-ol">
+        <li>Slash Commands</li>
+        <li>Prefix Commands</li>
+      </ol>
+    <div class="subcmds">
+      <div class="slash-cmd">
+      <h4 class="cmd-h4 cmd-ol-li">Slash Commands</h4>
+      <p class="cmd-p">Slash commands can be used at any time by typing <code class="code">/</code> in the chat, followed by the command name. These commands are always available and do <b>not require a prefix.</b></p>
+    </div>
+    <div class="slash-cmd">
+      <h4 class="cmd-h4 cmd-ol-li">Prefix Commands</h4>
+      <p class="cmd-p">The default prefix for Sergio Bot is <code class="code"><b>S!</b></code> <b>(case-sensitive)</b>. You can use prefix commands by typing the prefix followed by the command name. For example:</p>
+
+      <div class="pre">
+        <p class="ios-nav"><i class="fa-solid fa-circle red-txt"></i> <i class="fa-solid fa-circle yellow-txt"></i> <i class="fa-solid fa-circle green-txt"></i></p>
+          <div class="inside-code">
+            <ol class="inside-code-ol">
+              <li>S!help <p class="comments p-inline"> // Use this command to get the all the prefix comamnds.</p></li>
+              <li>S!sp ! <p class="comments p-inline">// you can even change the prefix by using setprefix (sp) </p></li>
+              <li>S!ping <p class="comments p-inline">// Gives the ping of user</p></li>
+              <li>S!ban <p class="comments p-inline">// Bans a user (PRE-REQUISITE: the user who is executing the command at least have {Aministrator, Ban-members} Perms.)</p></li>
+              <li>S!user @mentionuser <p class="comments p-inline">// Gets the user data </p></li>
+              <li>S!lock <p class="comments p-inline">// Make the channel private</p></li>
+              <li>S!unlock <p class="comments p-inline">// Unlock the channel and make it public.</p></li>
+              <li>S!fb <p class="comments p-inline">// Fetch all the banned user.</p></li>
+              <li>S!sn <p class="comments p-inline">// Set Nickname for the user (PRE-REQUISITE: {Admin Perms for the user and highest role for the bot.})</p></li>
+              <li>S!si <p class="comments p-inline">// Gives you the all possible guild info.</p></li>
+        </ol>
+      </div>
+      </div>
+      <p>Remember, the default prefix <code>S!</code> is case-sensitive, so make sure to use the correct capitalization when entering commands.</p>
+      
+      <p>If you ever need assistance with commands, you can use the help command with either method:</p>
+      <ul class="cmd-ol">
+        <li class="">Slash command: <code class="code">/help</code></li>
+        <li class="">Prefix command: <code class="code">S!help</code> (or your custom prefix)</li>
       </ul>
+    </div>
+    </div>
     </section>
     
-    <section id="prefix">
-      <h2>Prefix</h2>
-      <p>The default prefix for Sergio Bot is <code>!</code>. You can change it using the following command:</p>
-      <pre>!setprefix [new_prefix]</pre>
-      <p>For example, to change the prefix to <code>$</code>, use:</p>
-      <pre>!setprefix $</pre>
-    </section>
-    
-    <section id="features">
+    <section id="features" class="features">
       <h2>Features</h2>
       <p>Sergio Bot comes with a variety of features to enhance your Discord server:</p>
-      <ul>
-        <li>Moderation tools (kick, ban, mute)</li>
-        <li>Custom welcome messages</li>
-        <li>Role management</li>
-        <li>Music playback</li>
-        <li>Trivia games</li>
-        <li>And much more!</li>
-      </ul>
-      <p>To learn more about each feature, use the <code>!help [feature_name]</code> command.</p>
+      <table class="features-table">
+        <tr>
+          <th>Feature</th>
+          <th>Sub-commands</th>
+        </tr>
+        <tr>
+          <td>Moderation</td>
+          <td>
+            <ul>
+              <li>Ban</li>
+              <li>Kick</li>
+              <li>Mute</li>
+              <li>Timeout</li>
+              <li>Anti-link</li>
+              <li>Anti-spam</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Custom Welcome Messages</td>
+          <td>
+            <ul>
+              <li>Set welcome message</li>
+              <li>Set welcome channel</li>
+              <li>Enable/disable welcome messages</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Role Management</td>
+          <td>
+            <ul>
+              <li>Add role</li>
+              <li>Remove role</li>
+              <li>Create role</li>
+              <li>Delete role</li>
+              <li>Role info</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Music Playback</td>
+          <td>
+            <ul>
+              <li>Play</li>
+              <li>Pause</li>
+              <li>Skip</li>
+              <li>Queue</li>
+              <li>Now playing</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Social Notifcations</td>
+          <td>
+            <ul>
+              <li>Set Youtube Notifcations</li>
+              <li>Remove Youtube Notifcations</li>
+              <li>Set Github Update Notifcations</li>
+              <li>Set Twitch Update Notifcations</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <p>To learn more about each feature and its sub-commands, use the <code>S!help [feature_name]</code> command or the slash command <code>/help [feature_name]</code>.</p>
+    </section>
+    <hr>
+    <section class="footer">
+      <p>&copy; All rights reserved under <a href="https://fsf.org/">GNU License</a></p>
+      <a href="https://github.com/alokraj-05/Discord-Moderation-Bot">Countribute</a>
+      <a href="https://discord.gg/99ugxRgyk5">FeedBack</a>
+      <a href="https://discord.gg/99ugxRgyk5">Suggestion</a>
     </section>
   </div>
-  
-  <footer class="footer">
-    <a href="tos.html">Terms of Service</a> | 
-    <a href="privacy.html">Privacy Policy</a>
-  </footer>
-
   <script src="app.js"></script>
 </body>
 </html>
